@@ -1,0 +1,80 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities"; 
+
+
+.candidate-card-container {
+  margin: 1em;
+  position: relative;
+  width: 200px;
+}
+
+.candidate-card-container:not(:nth-child(3n+3))::before {
+  content: "";
+  position: absolute;
+  top: 50%; 
+  right: 0;
+  height: 50%;
+  border-right: 1px solid lightgray;
+  transform: translateY(-50%);
+}
+
+.bp5-heading {
+  margin-top: 2em;
+  text-wrap: balance;
+}
+
+.bp5-card {
+  text-align: center;
+}
+
+.price-heading {
+  color: #03b5f1;
+}
+
+.bp5-popover-transition-container {
+position: absolute;
+border: 1px solid;
+width: 215px; 
+background: white;
+border-radius: 5px;
+inset: 102.4444px auto auto 36.1111px!important;
+}
+
+ul > option:hover {
+  background: lightblue;
+  color: white;
+}
+
+ul {
+  padding: 0!important;
+  text-align: center;
+}
+
+.sort-button {
+  width: 215px;
+}
+
+.bp5-input {
+  border-radius: 10px;
+  width: 400px;
+  height: 35px;
+}
+
+.bp5-navbar-heading {
+  font-size: larger;
+  font-weight: bold;
+  color: #03b5f1;
+}
+
+.price-input > input {
+  width: 70px;
+}
+
+.price-filter-button{
+  color: white;
+  background-color: #03b5f1;
+  width: 80px;
+  height: 30px;
+  border: none;
+}
